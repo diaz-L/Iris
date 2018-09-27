@@ -1,0 +1,41 @@
+.primary__heading {
+    font: {
+        size: 4rem;
+        weight: 700;
+    }
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.secondary__heading {
+    font: {
+        size: 3rem;
+        weight: 700;
+    }
+    display: inline-block;
+    text-transform: uppercase;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 4.5rem;
+        border: 1px solid $heading-color;
+        margin: .3rem auto 0;   
+    }
+}
+
+.tertiary__heading {
+    font: {
+        size: 2rem;
+        weight: 400;
+    }
+    text-transform: uppercase;
+}
+
+.quaternary__heading {
+    font: {
+        size: 1.8rem;
+        weight: 400;
+    }
+    text-transform: capitalize;
+}

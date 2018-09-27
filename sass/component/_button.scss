@@ -1,0 +1,44 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+    font: {
+        size: 1.2rem;
+        weight: 700;
+    } 
+
+    &__primary {
+        background: $white;
+        color: $primary-color;
+        i {
+            padding-right: .5rem;
+        }
+    }
+
+    &__secondary {
+        color: $subheading-color;
+        font-weight: 400;
+        border: 2px solid $tertiary-color;
+    }
+
+    &__tertiary {
+        background: $tertiary-color;
+        color: $white;
+        border-radius: 3px;
+        font-weight: 400;
+    }
+
+    &--plan {
+        transition: all .6s ease-in-out;
+    }
+
+    &--blog:hover {
+        background: $tertiary-color;
+        color: $white;
+    }
+}

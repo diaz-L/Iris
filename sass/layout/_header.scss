@@ -1,0 +1,89 @@
+.header { 
+    color: $white;
+    height: 100vh;
+   
+    &__bg {
+        background: linear-gradient(rgba($primary-color, .92), rgba($primary-color, .92)), url("../images/bg_img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        border-bottom-left-radius: 1000px;
+        border-bottom-right-radius: 1000px;
+        position: absolute;
+        top: -12%;
+        left: -10rem;
+        transform: scale(1.2) skew(-10deg);
+        z-index: -5;
+    }
+
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__top {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    &__logo {
+        text-transform: capitalize;
+        font: {
+            weight: 600;
+            size: 3rem;
+        }
+        padding-left: 2rem;
+    }
+
+    &__menu {
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+
+            &__link {
+                display: inline-block;
+                color: $white;
+                font-size: 1.4rem;
+                text: {
+                    decoration: none;
+                    transform: uppercase;
+                }
+
+                &:hover {
+                    color: lightgray;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        align-items: center;
+    }
+
+    &__cta {
+        padding: 20px;
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__image {
+        position: relative;
+        top: 8rem;
+
+        img {
+            min-width: 100%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            left: -5rem;
+        }
+    }
+}

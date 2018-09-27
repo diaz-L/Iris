@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "abstract/utilities";
+
+@import "layout/header";
+@import "layout/about";
+@import "layout/features";
+@import "layout/stats";
+@import "layout/screenshots";
+@import "layout/plan";
+@import "layout/blog";
+@import "layout/newsletter";
+@import "layout/feedback";
+@import "layout/cta";
+@import "layout/contact";
+
+@import "component/button";
+@import "component/heading";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: {
+        size: 62.5%;
+        family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+
+    @include mobile {
+        font-size: 50%;
+    }
+    @include tablet {
+        font-size: 56.25%;
+    }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

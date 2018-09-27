@@ -1,0 +1,65 @@
+.cta {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: -5;
+        background: linear-gradient(rgba($primary-color,.92), rgba($primary-color,.92)), url("../images/getnow.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: $white;
+
+        h2 {
+            text-transform: capitalize;
+            letter-spacing: 1.5px;
+            font: {
+                size: 3rem;
+                weight: 600;
+            }
+        }
+
+        p {
+            width: 60%;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        width: 50%;
+        margin: 0 auto;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 6rem;
+            border-radius: 100px;
+        }
+        // .apple,
+        // .android {
+        //     align-self: center;
+        // }
+    }
+}

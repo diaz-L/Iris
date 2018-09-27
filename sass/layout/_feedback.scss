@@ -1,0 +1,97 @@
+.feedback {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: -5;
+        background: $quaternary-color;
+    }
+
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: $subheading-color;
+            font-size: 1.4rem;
+            text-align: center;
+            width: 60%;
+        }
+    }
+
+    .feedback__bottom {
+
+        .user__feedback {
+            background: $white;
+            padding: 5rem 0;
+            box-shadow: 1px 1px 5px rgba($black, .2);
+            transform: skew(-15deg);
+        }
+
+        .user__feedback-content {
+            display: grid;
+            grid-template-columns: 30% 65%;
+            grid-gap: 2rem;
+            transform: skew(15deg);
+
+            .user__avatar {
+                justify-self: center;
+
+                figure {
+                    justify-self: center;
+                    width: 20rem;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+
+                    h5 {
+                        color: $subheading-color;
+                    }
+
+                    figcaption {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .user__review {
+                align-self: start;
+                position: relative;
+                top: 2rem;
+
+                 p {
+                    align-self: center;
+                    font-size: 1.4rem;
+                    color: $subheading-color;
+                }
+
+                .quote-mark {
+                        position: relative;
+                        top: -2rem;
+                        left: -5rem;
+                        font-size: 3.5rem;
+                        display: inline-block;
+                        color: $tertiary-color;
+                }
+            }
+        } 
+    }
+}
